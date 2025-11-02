@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Puzzle board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+
+    <div class="top-controls">
+      <button id="startBtn" onclick="toggleGame()">Bắt đầu</button>
+    </div>
+    <div id="winMessage" class="hidden">
+      🎉 <strong>YOU WIN!</strong> 🎉
+
+    </div>
+    <div class="main-content">
+      <div id="grid" class="grid"></div>
+
+      <div class="side-panel">
+        <div class="timer-box">
+          <h4>Đồng Hồ</h4>
+          <div id="timer">00:00</div>
+        </div>
+
+        <div class="control-guide">
+          <h5>Hướng dẫn di chuyển</h5>
+          <div class="keys">
+            <div class="key">↑</div>
+            <div class="key">↓</div>
+            <div class="key">←</div>
+            <div class="key">→</div>
+            <div class="key">W</div>
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+   
+    <div class="history">
+      <h3>Lịch Sử Lượt Chơi</h3>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Bước</th><th>Thời gian (giây)</th></tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
